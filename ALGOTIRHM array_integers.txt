@@ -1,0 +1,20 @@
+ALGOTIRHM array_integers
+VAR
+ tab1,tab2 : ARRAY_OF INTEGER;
+ i,j, sumS, sumD : INTEGER;
+BEGIN
+Write('Print Array1 :');
+Write('Print Array2 :');
+sumS:=0;
+sumD:=0;
+ FOR i FROM 0 TO tab1.length-1 STEP 1  DO
+ FOR j FROM 0 TO tab2.length-1 STEP 1  DO
+  IF (tab[i] = tab[j]) THEN
+  sumS:=sumS+i;
+  ELSE
+  sumD=sumD+i;
+END_FOR
+END_FOR
+Write('similar number  sum',sumS);
+Write('different number sum',sumD);
+END
